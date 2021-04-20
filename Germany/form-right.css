@@ -118,7 +118,7 @@ button, input, select, textarea {
 	height: 20px;
 	float: left;
 	cursor: pointer;
-	background: url("/caraidiasa/images/checkbox-state-clicked.svg") 0 3px no-repeat;
+	background: url("https://fmeloooo.github.io/landingPages/Germany/images/checkbox-state-clicked.svg") 0 3px no-repeat;
 }
 
 .c-checkbox__replace + .c-checkbox__label {
@@ -126,7 +126,7 @@ button, input, select, textarea {
 	height: 20px;
 	float: left;
 	cursor: pointer;
-	background: url("/caraidiasa/images/checkbox-state-inactive.svg") 0 3px no-repeat;
+	background: url("https://fmeloooo.github.io/landingPages/Germany/images/checkbox-state-inactive.svg") 0 3px no-repeat;
 	color: #94a2b3;
 }
 
