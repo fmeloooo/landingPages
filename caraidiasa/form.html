@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/caraidiasa/form-right.css"> <!-- edited -->
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+-->
+  </head>
+  <style>
+    .toscheck[disabled] {
+      pointer-events: none;
+    }
+
+  </style>
+
+    <body>
+<div class="wrapUnbaunce">
+
+      <div id="app">
+            <form target="_top" action="https://app.honeypot.io/users" method="POST" class="c-talent-landing__form">
+              <h3 class="text-center c-talent-landing__form-header">Just one profile, no job applications!</h3>
+              <p class="text-center">Sign up, it only takes 5 minutes!</p>
+              <!-- <div class="form-actions row">
+                <div class="col-xs-6 c-talent-landing__oauth-wrapper">
+                  <a class="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--linkedin toscheck" href="https://app.honeypot.io/users/auth/linkedin?commit=linkedin&intent=sign_up&terms_of_service=1" disabled="">
+                    <i class="fa fa-linkedin"></i>LinkedIn
+                  </a>
+                </div>
+                <div class="col-xs-6 c-talent-landing__oauth-wrapper">
+                  <a class="btn btn-default c-talent-landing__oauth-btn c-talent-landing__oauth-btn--github toscheck" href="https://app.honeypot.io/users/auth/github?commit=github&intent=sign_up&terms_of_service=1" disabled="">
+                    <i class="fa fa-github"></i>GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="c-talent-landing__oauth-divider">or</div>-->
+              <div class="form-group">
+                <input type="text" class="form-control c-talent-landing__input" name="user[firstname]" placeholder="First name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control c-talent-landing__input" name="user[lastname]" placeholder="Last name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control c-talent-landing__input" name="user[email]" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control c-talent-landing__input" name="user[password]" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control c-talent-landing__input" name="user[password_confirmation]" placeholder="Repeat password">
+              </div>
+              <div class="control-label c-checkbox" data-checkbox="agree"><input onclick="terms_changed(this)" type="checkbox" id="agree" class="c-checkbox__replace" value="on" name="user[terms_of_service]"><label class="c-checkbox__label"></label><label for="agree" class="c-checkbox__replacement-label "><span>I agree to the <a href="https://www.honeypot.io/terms_of_service/#talents" target="_blank" classname="m-auth__checkbox-link">Terms of Service</a> and the <a href="https://www.honeypot.io/privacy_policy/" target="_blank" classname="m-auth__checkbox-link">Privacy Policy</a></span></label></div>
+              <div class="form-group">
+                <input type="submit" disabled="" class="btn btn-primary c-talent-landing__btn btn btn-default toscheck" value="Join Honeypot">
+              </div>
+        </form>
+      </div>
+      </div>
+</body>
+
+
+<script>
+
+  function terms_changed(termsCheckBox){
+    //If the checkbox has been checked
+    if(termsCheckBox.checked){
+        //Set the disabled property to FALSE and enable the button.
+        document.querySelectorAll(".toscheck").forEach((obj) => {obj.removeAttribute("disabled")})
+    } else{
+        //Otherwise, disable the submit button.
+        document.querySelectorAll(".toscheck").forEach((obj) => {obj.setAttribute("disabled", "disabled")})
+    }
+}
+
+</script>

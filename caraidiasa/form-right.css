@@ -1,0 +1,162 @@
+.c-talent-landing__form {
+	background-color: #fff;
+	padding: 20px 20px 15px;
+	border-radius: 5px;
+	color: #43484d;
+	margin-top: 30px;
+}
+
+/*form input*/
+.form-group {
+  margin-bottom: 15px;
+  display: block;
+  vertical-align: middle;
+}
+
+.form-control, output {
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #555;
+	display: block;
+}
+
+.form-control {
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-control::placeholder {
+	color: #999;
+	opacity: 1;
+}
+
+.form-control:focus {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+/*checkbox*/
+.c-checkbox::after, .c-checkbox::before {
+	content: " ";
+	display: table;
+}
+.c-checkbox::after{
+clear: both;
+
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin: 4px 0 0;
+	margin-top: 1px\9;
+	line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+
+
+.c-checkbox__replace {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	height: 20px;
+	opacity: 0;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.c-checkbox__replace:checked + .c-checkbox__label, .c-checkbox__replace:checked:hover + .c-checkbox__label {
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+	background: url("/caraidiasa/images/checkbox-state-clicked.svg") 0 3px no-repeat;
+}
+
+.c-checkbox__replace + .c-checkbox__label {
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+	background: url("/caraidiasa/images/checkbox-state-inactive.svg") 0 3px no-repeat;
+	color: #94a2b3;
+}
+
+.c-checkbox > .c-checkbox__replacement-label {
+	font-size: 14px;
+	font-weight: 400;
+	color: #94a2b3;
+	width: 90%;
+	padding-left: 0;
+	float: left;
+	margin: 4px 0 0 5px;
+}
+.c-talent-landing__form a {
+	color: #3685d6;
+	text-decoration: none;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Button*/
+
+.c-talent-landing__btn {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #3685d6;
+	border-color: #2978c9;
+}
+.btn-primary.active, .btn-primary:active, .btn-primary:hover, .open > .btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: #256cb4;
+	border-color: #1f5a97;
+}
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	line-height: 1.42857;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
