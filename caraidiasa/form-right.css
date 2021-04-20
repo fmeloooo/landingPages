@@ -6,6 +6,39 @@
 	margin-top: 30px;
 }
 
+/*text*/
+
+/*divider*/
+.c-talent-landing__oauth-divider::after {
+	right: -20px;
+}
+.c-talent-landing__form h3, p {
+text-align: center;
+
+}
+
+.c-talent-landing__oauth-divider {
+	position: relative;
+	margin: 15px 0;
+	text-align: center;
+	overflow: hidden;
+	color: #94a2b3;
+}
+
+.c-talent-landing__oauth-divider::after, .c-talent-landing__oauth-divider::before {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	width: 50%;
+	border-top: 1px solid #ddd;
+}
+
+.c-talent-landing__oauth-divider::before {
+	left: -20px;
+}
+
+
+
 /*form input*/
 .form-group {
   margin-bottom: 15px;
