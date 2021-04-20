@@ -8,14 +8,15 @@
 
 /*text*/
 
+.c-talent-landing__form h3, p {
+text-align: center;
+}
+
 /*divider*/
 .c-talent-landing__oauth-divider::after {
 	right: -20px;
 }
-.c-talent-landing__form h3, p {
-text-align: center;
 
-}
 
 .c-talent-landing__oauth-divider {
 	position: relative;
