@@ -8871,7 +8871,7 @@ button.close {
 
 .c-checkbox__replace {
   width: 100%;
-  position: absolute;
+  position: relative;
   left: 0;
   height: 20px;
   opacity: 0
