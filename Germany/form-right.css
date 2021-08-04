@@ -8871,10 +8871,11 @@ button.close {
 
 .c-checkbox__replace {
   width: 100%;
-  position: relative;
+  position: absolute;
   left: 0;
   height: 20px;
-  opacity: 0
+  opacity: 0;
+  z-index: -1;
 }
 
 .c-checkbox__replace:checked+.c-checkbox__label, .c-checkbox__replace:checked:hover+.c-checkbox__label {
